@@ -3,7 +3,7 @@ A Visual Novel engine inspired by Ren'Py. Games are made using a custom script l
 
 Personal project written in C to discover low-level programming, game engine programming, OpenGL, language lexing-parsing and design.
 
-![](https://cdn.discordapp.com/attachments/522499136449413123/732652083831898132/VNI-pres.gif)  
+![](readme/VNI-pres.gif)  
 *A "999: Nine Hours, Nine Persons, Nine Doors" fan game I'm doing to test my engine.*
 
 This scene is created by this script:
@@ -39,14 +39,14 @@ The speaker's name is introduced by the `>` symbol and demarcated by `"`.
 The `left` keyword specifies the speaker's name display location. It can be displayed either at the `left` or the `right` of the screen.  
 The position is mandatory.
 
-<img src="https://cdn.discordapp.com/attachments/522499136449413123/732674822567362640/unknown.png" width="480" height="360"/>
+<img src="readme/VNI-talk.png" width="480" height="360"/>
 
 It is also possible to display text without any speaker name, like with a narrator:
 ```
 >
 	Snake didn't answered, maybe he didn't heard Junpei at all.
 ```
-<img src="https://cdn.discordapp.com/attachments/522499136449413123/733444343595139202/unknown.png" width="480" height="360"/>
+<img src="readme/VNI-narrator.png" width="480" height="360"/>
 
 Successives sentences can be assigned to the same character:
 ```
@@ -58,7 +58,7 @@ Tabulations are part of the language, as in Python.
 Sentences must be indented one level further than the corresponding speaker declaration.  
 *The speaker declaration and the following indented sentences form a **cue**.*
 
-<img src="https://cdn.discordapp.com/attachments/522499136449413123/733445975737106532/VNI_-_multiline_no_anim.gif" width="480" height="360"/>
+<img src="readme/VNI-multiline_no_anim.gif" width="480" height="360"/>
 
 ---
 #### Animated dialog
@@ -67,7 +67,7 @@ To display a character, you need to specify its **animation** and its position o
 >"Seven" right "thinking" center
 	I still don't understand the purpose of this killing game.
 ```
-<img src="https://cdn.discordapp.com/attachments/522499136449413123/732688634712686722/VNI_-_animated_dialog.gif" width="480" height="360"/>
+<img src="readme/VNI-animated_dialog.gif" width="480" height="360"/>
 
 
 Seven's name is displayed at the right of the screen.  
@@ -93,7 +93,7 @@ This sequence contains a **choice**:
 	-Get out of here to meet the others.
 		->get_out
 ```
-<img src="https://cdn.discordapp.com/attachments/506035655206502410/731573090018132089/VNI-choice.gif" width="480" height="360"/>
+<img src="readme/VNI-choice.gif" width="480" height="360"/>
 
 A **choice option** is declared in a **cue** as normal sentences, prepended by a `-`.  
 It must be followed on the next line by a **go-to** operator `->` with its **knot** destination, which are both indented one level further than the **choice option**.  
@@ -203,7 +203,7 @@ The syntax of a **command** is the following:
 #another_command_name argument1 argument2
 ```
 #### Animations commands
-<img src="https://cdn.discordapp.com/attachments/506035655206502410/731573091314040872/VNI-backgrounds.gif" width="480" height="360"/>
+<img src="readme/VNI-backgrounds.gif" width="480" height="360"/>
 
 You can set the background sprite with the following **command**:
 ```
@@ -309,7 +309,7 @@ Window with OpenGL 3.3 context using Win32 API.
 Dynamic resize, focus-aware, make these informations accessibles in gameplay code.
 
 #### Example: responsivity
-<img src="https://cdn.discordapp.com/attachments/506035655206502410/731573086876336137/VNI-resize.gif" width="480" height="360"/>
+<img src="readme/VNI-resize.gif" width="480" height="360"/>
 
 ---
 ### Graphics
@@ -320,20 +320,20 @@ Displays Unicode text with TrueType fonts.
 Text can have a display width limit, so it can dynamically adjust himself.  
 Fonts read thanks to [stb_truetype](https://github.com/nothings/stb).
 
-<img src="https://cdn.discordapp.com/attachments/506035655206502410/731573091314040872/VNI-backgrounds.gif" width="480" height="360"/>
+<img src="readme/VNI-backgrounds.gif" width="480" height="360"/>
 
 ---
 ### User input
 Mouse, keyboard, scroll wheel, mouse side buttons input with Win32 API.  
 Accessible in gameplay code.
 
-<img src="https://cdn.discordapp.com/attachments/522499136449413123/733432898388099192/VNI_-_input.gif" width="480" height="360"/>
+<img src="readme/VNI-input.gif" width="480" height="360"/>
 
 ---
 ### Hot reload
 When pressing the `R` key, the game is reloaded, taking into account saved changes in dialog script.
 
-<img src="https://cdn.discordapp.com/attachments/522499136449413123/733492691186352168/VNI_-_hot_reload_light.gif" width="960" height="360"/>
+<img src="readme/VNI-hot_reload.gif" width="960" height="360"/>
 
 ---
 ### Audio
@@ -353,11 +353,11 @@ Reads audio assets thanks to [miniaudio](https://github.com/dr-soft/miniaudio).
 ```
 produces
 
-<img src="https://cdn.discordapp.com/attachments/522499136449413123/733427607491706991/unknown.png" width="300" height="120"/>
+<img src="readme/VNI-error.png" width="300" height="120"/>
 
 ---
 #### UTF-8 and UTF-16 handling
-<img src="https://cdn.discordapp.com/attachments/522499136449413123/733067648442564739/unknown.png" width="480" height="360"/>
+<img src="readme/VNI-unicode.png" width="480" height="360"/>
 
 ---
 #### Memory leak tracking.
