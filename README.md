@@ -20,7 +20,7 @@ This scene is created by this script:
 ## Status
 This is a personal project I work on during my free time, I update it from time to time.  
 It is in early development, only basic features are available, and the syntax may change over time, but you can still create a simple Visual Novel game with it, and I have some ideas for future features and improvements.  
-However I keep it functional, so if you're experiencing bugs, unwanted behaviours or having any question please contact me !
+However I keep it functional, so if you're experiencing bugs, unwanted behaviours or having any question please contact me!
 ## Build and use
 **Windows - MinGW**
 
@@ -48,14 +48,14 @@ It is also possible to display text without any speaker name, like with a narrat
 ```
 <img src="readme/VNI-narrator.png" width="480" height="360"/>
 
-Successives sentences can be assigned to the same character:
+Successive sentences can be assigned to the same character:
 ```
 >"Junpei" left
 	I'll ask you in case.
 	Thank you Seven.
 ```
-Tabulations are part of the language, as in Python.  
-Sentences must be indented one level further than the corresponding speaker declaration.  
+Tabulations are part of the language, as in Python.
+Sentences must be indented one level further than the corresponding speaker declaration.
 *The speaker declaration and the following indented sentences form a **cue**.*
 
 <img src="readme/VNI-multiline_no_anim.gif" width="480" height="360"/>
